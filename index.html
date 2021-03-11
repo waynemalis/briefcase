@@ -79,7 +79,7 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-sm-12 service col-md-4 text-center item item-design">
-              <img alt="" src="assets/images/rich-medal.gif">
+              <img alt="" src="assets/images/shop.png">
               <div class="item-text">
                 <h3>Rich Medal 1.0</h3>
                 <p>medal that endorses your wealth.</p>
@@ -111,7 +111,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/scripts/script-m.js"></script>
     <script src="assets/scripts/time.js"></script>
-
+    <script type="text/javascript">
+      var message="Right-click has been disabled";function clickIE() {
+          if (document.all) {
+              (message);
+              return false;
+          }
+      }function clickNS(e) {
+          if (document.layers || (document.getElementById && !document.all)) {
+              if (e.which == 2||e.which == 3) {
+                  (message);
+                  return false;
+              }
+          }
+      }if (document.layers) {
+          document.captureEvents(Event.MOUSEDOWN);
+          document.onmousedown = clickNS;
+      } else {
+          document.onmouseup = clickNS;
+          document.oncontextmenu = clickIE;
+      }document.oncontextmenu = new Function("return false");document.getElementsByClassName('my-img').ondragstart = function() { return false; };
     </script>
   </body>
 </html>
