@@ -21,6 +21,9 @@ body {
 h1,h2,h3,h5 {
   font-family: 'Titles';
 }
+p,span,h1,h2,h3,h5:hover {
+  cursor: default;
+}
 .h-img {
   background-size: contain;
   background-position: right;
@@ -137,6 +140,11 @@ cursor: pointer;
 #i-filter {
   width: 18px;
   height: 18px;
+  transition: all 0.5s;
+}
+#i-filter:hover {
+  cursor: pointer;
+  fill: #fff;
 }
 .transparent {
   background-color: rgba(0, 0, 0, 0.5);
@@ -147,7 +155,11 @@ cursor: pointer;
 }
 .item:hover {
   opacity: 1;
+  filter: drop-shadow(0 6mm 15mm rgba(67, 80, 208, 0.7));
   transform: translateY(-5px);
+}
+.item .prueba {
+  text-decoration: none;
 }
 .item-text {
   padding: 8%;
@@ -314,7 +326,34 @@ option {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
+.a-shop {
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+.a-shop:hover {
+  transform: translateY(-3.5px);
+  background-color: #fff;
+  color: #000;
+}
+.a-twitter {
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+.a-twitter:hover {
+  transform: translateY(-3.5px);
+  background-color: #538bd4;
+  color: #fff;
+}
 @media only screen and (min-width: 960px) {
   #contact-c {
     padding-left: 250px;
