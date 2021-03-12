@@ -142,18 +142,27 @@ cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .item {
-
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+.item:hover {
+  opacity: 1;
+  transform: translateY(-5px);
 }
 .item-text {
   padding: 8%;
   background: #fff;
   color: #000;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 .item-text p {
   font-size: 0.7rem;
 }
 .item img {
   width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .coming-design {
   opacity: 0.8;
