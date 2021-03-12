@@ -338,3 +338,12 @@ option {
     text-align: right;
   }
 }
+::-moz-selection { /* Code for Firefox */
+  color: #ff9ccb;
+  background: #4350d0;
+}
+
+::selection {
+  color: #ff9ccb;
+  background: #4350d0;
+}
