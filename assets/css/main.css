@@ -123,6 +123,7 @@ nav .logo {
 	top: 0;
 	left:30px;
 	bottom: 0;
+	width: auto;
 	height: 100%;
 }
 
