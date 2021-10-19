@@ -1,1 +1,0 @@
-<p>Actualice la configuración de su sitio desde el <a href="http://localhost/bludit-3-13-1/admin/edit-content/admin/">panel de administración</a>, puede cambiar el título, la descripción y las redes sociales desde <a href="http://localhost/bludit-3-13-1/admin/edit-content/admin/settings">Configuracion &gt; General</a>.</p>
