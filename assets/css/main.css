@@ -116,6 +116,10 @@ nav {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
   }
+	.Responsive-M {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
 }
 
 nav .logo {
@@ -248,7 +252,7 @@ nav ul li .night:active .feather {
   left: 0;
   height: 100%;
 	z-index: 2;
-	background: #000;
+	background: rgba(0, 0, 0, 0.85);
 }
 
 .Responsive-M ul {
