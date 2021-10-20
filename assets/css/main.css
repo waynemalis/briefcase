@@ -60,6 +60,14 @@ header {
 	background: rgba(255, 255, 255, 1);
 }
 
+.dark h3, .dark .feather-hash {
+	color: #000;
+}
+
+.dark.active h3, .dark.active .feather-hash {
+	color: #fff;
+}
+
 .dark.active {
 	background: rgba(0, 0, 0, 1);
 }
@@ -325,9 +333,22 @@ nav ul li .night:active .feather {
 
 .works {
 	margin: 0;
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 80px;
 	width: 100%;
+}
+
+.works-title {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	font-family: Open;
+	margin-top: 40px;
+	background-color: rgba(255, 0, 0, 0) !important;
 }
 
 .list {
@@ -372,8 +393,7 @@ nav ul li .night:active .feather {
 
 .itemlist img:hover {
   filter: brightness(0.5);
-	transform: scale(1.03);
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	transform: scale(1.02);
 }
 
 @media only screen and (max-width: 980px) {
@@ -400,6 +420,11 @@ nav ul li .night:active .feather {
 	}
 	.works {
 		padding: 0;
+	}
+
+	.works-title {
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 }
 

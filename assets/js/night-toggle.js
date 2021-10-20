@@ -2,8 +2,7 @@ var menuToggle = document.querySelector('.toggle');
 var menumobToggle = document.querySelector('.toggle2');
 let mobileToggle = document.querySelector('.burguer');
 let nightMode = document.querySelector('.dark');
-let lightMode = document.querySelector('.light')
-let desplegarMenu = document.querySelector('.Responsive-M')
+var lightMode = document.getElementById("ngt");
 menuToggle.onclick = function(){
   menuToggle.classList.toggle('active')
   menumobToggle.classList.toggle('active')
