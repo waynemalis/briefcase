@@ -3,6 +3,7 @@ var menumobToggle = document.querySelector('.toggle2');
 let mobileToggle = document.querySelector('.burguer');
 let nightMode = document.querySelector('.dark');
 var lightMode = document.getElementById("ngt");
+let desplegarMenu = document.querySelector('.Responsive-M');
 menuToggle.onclick = function(){
   menuToggle.classList.toggle('active')
   menumobToggle.classList.toggle('active')
