@@ -72,12 +72,28 @@ header {
 	color: #fff;
 }
 
-.dark .btn {
+.dark .btn, .dark .submit-form {
 	background: #000;
 }
 
-.dark.active .btn {
+.dark.active .btn, .dark.active .submit-form {
 	background: #fff;
+}
+
+.dark form span, .dark form h3, .dark form .input-text {
+	color: #000;
+}
+
+.dark.active form span, .dark.active form h3, .dark.active form .input-text {
+	color: #fff;
+}
+
+.dark .submit-form {
+	color: #fff;
+}
+
+.dark.active .submit-form {
+	color: #000;
 }
 
 .dark .btn h3, .dark .feather-plus {
@@ -531,7 +547,6 @@ form {
 	flex-flow: row;
 	padding: 30px;
 	margin: 20px;
-	background-color: #000;
 }
 
 form span {
@@ -550,11 +565,11 @@ form .input-text {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 60px;
-  background: #000;
 	font-size: 15px;
 	padding-bottom: 15px;
   border: 0;
   border-bottom: 3px solid #f7bdc8;
+	background-color: rgba(0, 0, 0, 0);
 	animation: brightness 6s ease-in-out infinite;
 }
 
@@ -578,6 +593,7 @@ textarea {
 }
 
 .lets {
+	text-align: center;
 	margin-top: -50px;
 	margin-bottom: 80px;
 	font-size: 1.8em;
@@ -639,6 +655,7 @@ textarea {
 		opacity: 0 !important;
 	}
 	.lets {
+		font-size: 1.4em;
 		margin-top: 20px;
 	}
 }
