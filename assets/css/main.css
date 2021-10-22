@@ -388,7 +388,7 @@ nav ul li .night:active .feather {
 	text-align: center;
 	display: flex;
 	margin-top: 40px;
-	padding-bottom: 80px;
+	margin-bottom: 80px;
 	background-color: rgba(255, 0, 0, 0) !important;
 }
 
@@ -417,6 +417,14 @@ nav ul li .night:active .feather {
 	width: 20px;
 	margin-left: -10px;
 	padding-right: 10px;
+	transition: all 0.3s;
+	transform: scale(0.8);
+}
+
+.plus-title .btn:hover .feather-plus {
+	color: #f5ae00;
+	transform: scale(1.2);
+	animation: brightness 8s ease-in-out infinite;
 }
 
 .footer-title {
@@ -427,7 +435,7 @@ nav ul li .night:active .feather {
 	justify-content: center;
 	text-align: center;
 	margin-top: 40px;
-	padding-bottom: 40px;
+	margin-bottom: 40px;
 	font-family: Open;
 	opacity: 0.6;
 }
@@ -509,6 +517,64 @@ nav ul li .night:active .feather {
 	cursor: pointer;
 }
 
+.contact-form {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-family: Open;
+}
+
+form {
+	border-radius: 8px;
+	flex-flow: row;
+	padding: 30px;
+	margin: 20px;
+	background-color: #000;
+}
+
+form span {
+	color: #fff;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+form .input-text {
+	font-family: Open;
+	width: 100%;
+}
+
+.input-text {
+  color: #fff;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: #000;
+	padding: 6px;
+  border: 0;
+  border-bottom: 3px solid #f7bdc8;
+	animation: brightness 6s ease-in-out infinite;
+}
+
+.input-text:focus {
+	outline: none;
+}
+
+textarea {
+	font-family: Open;
+	height: 50px;
+  resize: none;
+}
+
+.submit-form {
+	border: none;
+	padding: 10px 32px;
+	border-radius: 8px;
+  width: 100%;
+	background: #fff;
+}
+
 @media only screen and (max-width: 980px) {
 	.dv {
 		display: none;
@@ -538,6 +604,15 @@ nav ul li .night:active .feather {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+	.plus-title {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.footer-title {
+		font-size: 0.8em;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
 	.itemlist img {
 		filter: brightness(1) !important;
 	}
@@ -554,6 +629,11 @@ nav ul li .night:active .feather {
 @media only screen and (min-width: 970px) {
 	.Responsive-M {
 		display: none;
+	}
+	form {
+		padding: 5%;
+		margin-left: 30%;
+		margin-right: 30%;
 	}
 }
 
