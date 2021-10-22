@@ -434,7 +434,7 @@ nav ul li .night:active .feather {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 80px;
 	margin-bottom: 40px;
 	font-family: Open;
 	opacity: 0.6;
@@ -549,9 +549,10 @@ form .input-text {
   color: #fff;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   background: #000;
-	padding: 6px;
+	font-size: 15px;
+	padding-bottom: 15px;
   border: 0;
   border-bottom: 3px solid #f7bdc8;
 	animation: brightness 6s ease-in-out infinite;
@@ -569,10 +570,23 @@ textarea {
 
 .submit-form {
 	border: none;
-	padding: 10px 32px;
+	padding: 15px 32px;
 	border-radius: 8px;
   width: 100%;
 	background: #fff;
+	margin-top: 40px;
+}
+
+.lets {
+	margin-top: -50px;
+	margin-bottom: 80px;
+	font-size: 1.8em;
+	font-family: Open;
+}
+
+.lets h3 {
+	color: #fff;
+	font-family: Open;
 }
 
 @media only screen and (max-width: 980px) {
@@ -610,7 +624,7 @@ textarea {
 	}
 	.footer-title {
 		font-size: 0.8em;
-		margin-top: 40px;
+		margin-top: 80px;
 		margin-bottom: 40px;
 	}
 	.itemlist img {
@@ -623,6 +637,9 @@ textarea {
 		padding: 23.5px;
 		transition: all 0.1s;
 		opacity: 0 !important;
+	}
+	.lets {
+		margin-top: 20px;
 	}
 }
 
