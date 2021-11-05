@@ -32,6 +32,7 @@
 			<div class="scroll-down">
 				<i data-feather="chevron-down"></i>
 			</div>
+			<canvas id="canvas3d"></canvas>
 		</div>
 		<div id="work" class="works-title">
 			<i data-feather="hash"></i><h3>Works</h3>
@@ -100,5 +101,11 @@
   </script>
 	<script src="assets/js/night-toggle.js"></script>
 	<script src="assets/js/radial.js"></script>
+	<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+	<script src="runtime.js"></script>
+	<script>
+		const app = new SpeRuntime.Application();
+		app.start('./scene.json');
+	</script>
 </body>
 </html>
